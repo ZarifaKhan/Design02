@@ -46,13 +46,13 @@ body {
   background-color: #252b42;
 }
 
-.impression-section .impression-section-bottom, .advice .advice-items .advice-bottom .advice-bottom-footer, .aprodable, .evalution, .hero-content, header {
+.impression-section .impression-section-bottom, .aprodable, .evalution, .hero-content, header {
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
 
-.advice .advice-items .advice-bottom .learn, .advice .advice-items .advice-bottom .advice-bottom-header, .hero-content .hero-content-left .button-section, header .menu-content-wrapper {
+.hero-content .hero-content-left .button-section, header .menu-content-wrapper {
   display: flex;
   align-items: center;
 }
@@ -105,6 +105,7 @@ header .button-wrapper .btn-primary {
   flex-direction: column;
   gap: 50px;
   margin-right: 50px;
+  margin-top: 180px;
 }
 .hero-content .hero-content-left h5 {
   color: #23a6f0;
@@ -219,116 +220,121 @@ header .button-wrapper .btn-primary {
   font-weight: 700;
 }
 
-.advice {
-  padding: 40px 180px;
+.section-3 {
+  padding: 30px 195px;
 }
-.advice .advice-top {
+.section-3 .section-3-top {
   display: flex;
   flex-direction: column;
-  gap: 10px;
-  padding: 20px;
-  margin-bottom: 30px;
+  gap: 20px;
 }
-.advice .advice-top h6 {
+.section-3 .section-3-top .section-3-top-h6 {
   color: #23a6f0;
-  font-size: 16px;
-  font-weight: 700;
+  font-size: 20px;
+  font-weight: 500;
 }
-.advice .advice-top h2 {
+.section-3 .section-3-top .section-3-top-h2 {
   color: #ffffff;
   font-weight: 700;
-  font-size: 35px;
 }
-.advice .advice-top p {
+.section-3 .section-3-top .section-3-top-text {
   color: #ffffff;
-  line-height: 22px;
+  line-height: 21px;
 }
-.advice .advice-items {
+.section-3 .section-3-container {
+  margin-top: 100px;
   display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: nowrap;
-  height: 600px;
-  gap: 30px;
-  margin-top: 80px;
+  align-items: stretch;
+  justify-content: space-between;
+}
+.section-3 .section-3-container .section-3-bottom {
+  background-color: #ffffff;
+  width: 330px;
   position: relative;
 }
-.advice .advice-items .sale {
+.section-3 .section-3-container .section-3-bottom .sale {
   position: absolute;
-  top: -50px;
-  left: 72px;
+  top: 10px;
+  left: 10px;
 }
-.advice .advice-items .icons {
+.section-3 .section-3-container .section-3-bottom .product {
   position: absolute;
-  top: 174px;
-  left: 145px;
+  top: 242px;
+  right: 98px;
 }
-.advice .advice-items .icons img {
-  background-color: #ffffff;
-  border-radius: 50%;
-  padding: 5px;
-}
-.advice .advice-items .advice-bottom {
-  width: 329px;
-  background-color: #ffffff;
+.section-3 .section-3-container .section-3-bottom-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
   padding: 20px;
 }
-.advice .advice-items .advice-bottom .advice-bottom-header {
-  gap: 70px;
-}
-.advice .advice-items .advice-bottom .advice-bottom-header p {
-  color: #23a6f0;
-  font-size: 16px;
-  font-weight: 700;
-  margin-bottom: 20px;
-}
-.advice .advice-items .advice-bottom h5 {
-  font-size: 16px;
-  font-weight: 700;
-  margin-bottom: 20px;
-}
-.advice .advice-items .advice-bottom p {
-  font-size: 14px;
-  line-height: 20px;
-  letter-spacing: 0.2px;
-  margin-bottom: 20px;
-}
-.advice .advice-items .advice-bottom img {
-  margin-right: 20px;
-}
-.advice .advice-items .advice-bottom small {
-  font-weight: 600;
-}
-.advice .advice-items .advice-bottom .price {
-  margin-top: 20px;
-  font-weight: 600;
-  opacity: 0.5;
-}
-.advice .advice-items .advice-bottom .price span {
-  color: #40bb15;
-  font-weight: 900;
-}
-.advice .advice-items .advice-bottom .advice-bottom-footer {
-  margin-top: 40px;
-}
-.advice .advice-items .advice-bottom .advice-bottom-footer .calendar {
-  margin-left: -23px;
-  color: #737373;
-  font-weight: 600;
-}
-.advice .advice-items .advice-bottom .learn {
-  margin-top: 40px;
-}
-.advice .advice-items .advice-bottom .learn .btn-primary {
-  border: 1px solid #23a6f0;
-  color: #23a6f0;
-  padding: 15px 25px;
+.section-3 .section-3-container .section-3-bottom-container .section-3-bottom-header {
   display: flex;
-  gap: 15px;
-  font-weight: 700;
-  border-radius: 80px;
+  align-items: center;
+  gap: 75px;
 }
-.advice .advice-items .advice-bottom .learn .btn-primary img {
+.section-3 .section-3-container .section-3-bottom-container .section-3-bottom-header .department-link {
+  color: #23a6f0;
+  font-weight: 700;
+  font-size: 14px;
+}
+.section-3 .section-3-container .section-3-bottom-container .graphic-design {
+  color: #252b42;
+  font-size: 18px;
+  font-weight: 800;
+}
+.section-3 .section-3-container .section-3-bottom-container .section-3-bottom-container-text {
+  width: 282px;
+  line-height: 22px;
+  color: #737373;
+}
+.section-3 .section-3-container .section-3-bottom-container .sales {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.section-3 .section-3-container .section-3-bottom-container .sales .sales-number {
+  color: #737373;
+  font-weight: 700;
+}
+.section-3 .section-3-container .section-3-bottom-container .price {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.section-3 .section-3-container .section-3-bottom-container .price .grey-price {
+  color: #bdbdbd;
+  font-weight: 700;
+}
+.section-3 .section-3-container .section-3-bottom-container .price .green-price {
+  color: #40bb15;
+  font-weight: 700;
+}
+.section-3 .section-3-container .section-3-bottom-container .section-3-footer {
+  display: flex;
+  justify-content: space-between;
+}
+.section-3 .section-3-container .section-3-bottom-container .section-3-footer .calendar-text {
+  color: #737373;
+  font-weight: 500;
+}
+.section-3 .section-3-container .section-3-bottom-container .section-3-footer .smooth-text, .section-3 .section-3-container .section-3-bottom-container .section-3-footer .outlined-text {
+  color: #737373;
+  font-weight: 700;
+}
+.section-3 .section-3-container .section-3-bottom-container .section-3-learn {
+  padding: 20px 10px;
+  border: 2px solid #23a6f0;
+  display: flex;
+  align-items: center;
+  width: 200px;
+  border-radius: 50px;
+  margin-top: 30px;
+}
+.section-3 .section-3-container .section-3-bottom-container .section-3-learn .learn {
+  margin-right: 25px;
+  margin-left: 10px;
+  color: #23a6f0;
   font-weight: 700;
 }
 

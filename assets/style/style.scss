@@ -126,6 +126,7 @@ header {
     flex-direction: column;
     gap: 50px;
     margin-right: 50px;
+    margin-top: 180px;
 
     h5 {
       color: $primary-color;
@@ -257,137 +258,267 @@ header {
   }
 }
 
-.advice {
-  padding: 40px 180px;
+.section-3{
+  padding: 30px 195px;
 
-  .advice-top {
+  .section-3-top{
     display: flex;
-    
     flex-direction: column;
-    gap: 10px;
-    padding: 20px;
-    margin-bottom: 30px;
-    h6 {
-      color: $primary-text-color;
-      font-size: 16px;
-      font-weight: 700;
+    gap: 20px;
+
+    .section-3-top-h6{
+        color: $primary-text-color;
+        font-size: 20px;
+        font-weight: 500;
     }
-    h2 {
+    .section-3-top-h2{
       color: $light-background-color;
       font-weight: 700;
-      font-size: 35px;
+      
     }
-    p {
+    .section-3-top-text{
       color: $light-text-color;
-      line-height: 22px;
+      line-height: 21px;
     }
   }
-
-  .advice-items {
-    //  @extend %flex-center;
+  .section-3-container{
+    margin-top: 100px;
     display: flex;
-    justify-content: center;
-    align-items: center;
-    // align-content: stretch;
-    flex-wrap: nowrap;
-    height: 600px;
-    gap: 30px;
-    margin-top: 80px;
+    align-items: stretch;
+    justify-content: space-between;
+  
+  .section-3-bottom{
+    background-color: $light-background-color;
+    width: 330px;
     position: relative;
-    // background-color: $light-background-color;
-
-    .sale {
+     
+    .sale{
       position: absolute;
-      top: -50px;
-      left: 72px;
-     ;
+      top: 10px;
+      left: 10px;
     }
-    .icons {
+    .product{
       position: absolute;
-      top: 174px;
-      left: 145px;
-
-      img {
-        background-color: $light-background-color;
-        border-radius: 50%;
-        padding: 5px;
-      }
+      top: 242px;
+      right: 98px;
     }
-    .advice-bottom {
-      width: 329px;
-      background-color: $light-background-color;
-      padding: 20px;
+  }
+  .section-3-bottom-container{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
 
-      .advice-bottom-header {
-        @extend %valign-center;
-        gap: 70px;
-
-        p {
-          color: $primary-text-color;
-          font-size: 16px;
-          font-weight: 700;
-          margin-bottom: 20px;
-        }
-      }
-      h5 {
-        font-size: 16px;
+    .section-3-bottom-header{
+      display: flex;
+      align-items: center;
+      gap: 75px;
+      .department-link{
+        color: $primary-text-color;
         font-weight: 700;
-        margin-bottom: 20px;
-      }
-      p {
         font-size: 14px;
-        line-height: 20px;
-        letter-spacing: 0.2px;
-        margin-bottom: 20px;
       }
-      img {
-        margin-right: 20px;
+      
+    }
+    .graphic-design{
+      color: $text-color;
+     font-size: 18px;
+     font-weight: 800;
+    }
+    .section-3-bottom-container-text{
+      width: 282px;
+      line-height: 22px;
+      color: $second-text-color;
+
+    }
+
+    .sales{
+      display: flex;
+      align-items: center;
+      gap:10px;
+      .sales-number{
+        color: $second-text-color;
+        font-weight: 700;
       }
-      small {
-        font-weight: 600;
-      }
-      .price {
-        margin-top: 20px;
-        font-weight: 600;
-        opacity: 0.5;
-        span {
-          color: $secondary-color-1;
-          font-weight: 900;
+    }
+    .price{
+      display: flex;
+      align-items: center;
+      gap: 10px;
+        .grey-price{
+          color: $muted-color;
+          font-weight: 700;
         }
+      .green-price{
+        color: $secondary-color-1;
+        font-weight: 700;
       }
-      .advice-bottom-footer {
-        @extend %flex-center;
-        margin-top: 40px;
-        .calendar {
-          margin-left: -23px;
-          color: $second-text-color;
-          font-weight: 600;
-        }
+    }
+    .section-3-footer{
+      display: flex;
+      justify-content: space-between;
+      .calendar-text{
+        color: $second-text-color;
+        font-weight: 500;
       }
+      .smooth-text,.outlined-text{
+        color: $second-text-color;
+        font-weight: 700;
+      }
+    }
+    .section-3-learn{
+      padding:20px 10px; 
+      border: 2px solid $primary-text-color;
+      display: flex;
+      align-items: center;
+      width: 200px;
+      border-radius: 50px;
+      margin-top: 30px;
 
       .learn{
-        margin-top: 40px;
-       @extend %valign-center;
-      
-
-       .btn-primary {
-        border:1px solid $primary-color;
-        color: $primary-color;
-        padding: 15px 25px;
-        display: flex;
-        gap: 15px;
+        margin-right: 25px;
+        margin-left: 10px;
+        color: $primary-text-color;
         font-weight: 700;
-        border-radius: 80px;
 
-        img{
-          font-weight: 700;
-        }
+     
       }
-      }
-      
     }
   }
+  }
 }
+
+// .advice {
+//   padding: 40px 180px;
+  
+
+//   .advice-top {
+//     display: flex;
+    
+//     flex-direction: column;
+//     gap: 10px;
+//     padding: 20px;
+//     margin-bottom: 30px;
+//     h6 {
+//       color: $primary-text-color;
+//       font-size: 16px;
+//       font-weight: 700;
+//     }
+//     h2 {
+//       color: $light-background-color;
+//       font-weight: 700;
+//       font-size: 35px;
+//     }
+//     p {
+//       color: $light-text-color;
+//       line-height: 22px;
+//     }
+//   }
+
+//   .advice-items {
+//     display: flex;
+//     justify-content: center;
+//     gap: 30px;
+   
+
+//     .advice-bottom-item{
+//       align-items: stretch;
+//       background-color: $light-text-color;
+//     }
+
+//     .sale {
+//       position: absolute;
+//       top: -50px;
+//       left: 72px;
+//      ;
+//     }
+//     .icons {
+//       position: absolute;
+//       top: 174px;
+//       left: 145px;
+
+//       img {
+//         background-color: $light-background-color;
+//         border-radius: 50%;
+//         padding: 5px;
+//       }
+//     }
+//     .advice-bottom {
+//       width: 329px;
+//       background-color: $light-background-color;
+//       padding: 20px;
+
+//       .advice-bottom-header {
+//         @extend %valign-center;
+//         gap: 70px;
+
+//         .department {
+//           color: $primary-text-color;
+//           font-size: 13px;
+//           font-weight: 700;
+//           margin: 20px 0;
+//         }
+//       }
+//       h5 {
+//         font-size: 16px;
+//         font-weight: 700;
+//         margin-bottom: 20px;
+//       }
+//       p {
+//         font-size: 14px;
+//         line-height: 20px;
+//         letter-spacing: 0.2px;
+//         margin-bottom: 20px;
+//       }
+//       img {
+//         margin-right: 20px;
+//       }
+//       small {
+//         font-weight: 600;
+//       }
+//       .price {
+//         margin-top: 20px;
+//         font-weight: 600;
+//         opacity: 0.5;
+//         span {
+//           color: $secondary-color-1;
+//           font-weight: 900;
+//         }
+//       }
+//       .advice-bottom-footer {
+//         @extend %flex-center;
+//         margin-top: 40px;
+//         .calendar {
+//           font-size: 14px;
+//           margin-left: -23px;
+//           color: $second-text-color;
+//           font-weight: 600;
+//         }
+//       }
+
+//       .learn{
+//         margin-top: 40px;
+//        @extend %valign-center;
+      
+
+//        .btn-primary {
+//         border:1px solid $primary-color;
+//         color: $primary-color;
+//         padding: 15px 25px;
+//         display: flex;
+//         gap: 15px;
+//         font-weight: 700;
+//         border-radius: 80px;
+
+//         img{
+//           font-weight: 700;
+//         }
+//       }
+//       }
+      
+//     }
+//   }
+// }
 
 
 .impression-section{
